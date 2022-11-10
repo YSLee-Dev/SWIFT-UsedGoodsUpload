@@ -13,6 +13,15 @@
 		340F0C45291A646900625DE5 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 340F0C44291A646900625DE5 /* Then */; };
 		340F0C47291A647300625DE5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0C46291A647300625DE5 /* MainVC.swift */; };
 		340F0C49291A656100625DE5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0C48291A656100625DE5 /* MainViewModel.swift */; };
+		340F0C4C291CF81000625DE5 /* TitleTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0C4B291CF81000625DE5 /* TitleTextFieldCell.swift */; };
+		340F0C4E291CF81A00625DE5 /* TitleTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0C4D291CF81A00625DE5 /* TitleTextFieldCellViewModel.swift */; };
+		340F0C51291CF9CC00625DE5 /* Caregory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0C50291CF9CC00625DE5 /* Caregory.swift */; };
+		340F0C55291CFA1500625DE5 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0C54291CFA1500625DE5 /* CategoryViewModel.swift */; };
+		340F0C57291CFC5700625DE5 /* CategoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0C56291CFC5700625DE5 /* CategoryListVC.swift */; };
+		340F0C5A291D01C500625DE5 /* PriceTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0C59291D01C500625DE5 /* PriceTextFieldViewModel.swift */; };
+		340F0C5C291D03B800625DE5 /* PriceTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0C5B291D03B800625DE5 /* PriceTextFieldCell.swift */; };
+		340F0C5F291D06F000625DE5 /* DetailWirteFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0C5E291D06F000625DE5 /* DetailWirteFormCell.swift */; };
+		340F0C61291D06FD00625DE5 /* DetailWirteFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0C60291D06FD00625DE5 /* DetailWirteFormViewModel.swift */; };
 		349CF2D4290FCEB800BD6261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF2D3290FCEB800BD6261 /* AppDelegate.swift */; };
 		349CF2D6290FCEB800BD6261 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF2D5290FCEB800BD6261 /* SceneDelegate.swift */; };
 		349CF2DD290FCEBA00BD6261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349CF2DC290FCEBA00BD6261 /* Assets.xcassets */; };
@@ -22,6 +31,15 @@
 /* Begin PBXFileReference section */
 		340F0C46291A647300625DE5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		340F0C48291A656100625DE5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		340F0C4B291CF81000625DE5 /* TitleTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextFieldCell.swift; sourceTree = "<group>"; };
+		340F0C4D291CF81A00625DE5 /* TitleTextFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextFieldCellViewModel.swift; sourceTree = "<group>"; };
+		340F0C50291CF9CC00625DE5 /* Caregory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caregory.swift; sourceTree = "<group>"; };
+		340F0C54291CFA1500625DE5 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		340F0C56291CFC5700625DE5 /* CategoryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListVC.swift; sourceTree = "<group>"; };
+		340F0C59291D01C500625DE5 /* PriceTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldViewModel.swift; sourceTree = "<group>"; };
+		340F0C5B291D03B800625DE5 /* PriceTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldCell.swift; sourceTree = "<group>"; };
+		340F0C5E291D06F000625DE5 /* DetailWirteFormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWirteFormCell.swift; sourceTree = "<group>"; };
+		340F0C60291D06FD00625DE5 /* DetailWirteFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWirteFormViewModel.swift; sourceTree = "<group>"; };
 		349CF2D0290FCEB800BD6261 /* Eight_UsedGoodsUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eight_UsedGoodsUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349CF2D3290FCEB800BD6261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349CF2D5290FCEB800BD6261 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +63,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340F0C4A291CF7EC00625DE5 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				340F0C46291A647300625DE5 /* MainVC.swift */,
+				340F0C48291A656100625DE5 /* MainViewModel.swift */,
+				340F0C4F291CF81D00625DE5 /* TitleTextFieldCell */,
+				340F0C58291D01AA00625DE5 /* CategoryVC */,
+				340F0C5D291D068A00625DE5 /* PriceTextFieldCell */,
+				340F0C62291D070700625DE5 /* DetailWirteFormCell */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		340F0C4F291CF81D00625DE5 /* TitleTextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				340F0C4B291CF81000625DE5 /* TitleTextFieldCell.swift */,
+				340F0C4D291CF81A00625DE5 /* TitleTextFieldCellViewModel.swift */,
+			);
+			path = TitleTextFieldCell;
+			sourceTree = "<group>";
+		};
+		340F0C52291CF9D500625DE5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				340F0C50291CF9CC00625DE5 /* Caregory.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		340F0C53291CF9ED00625DE5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				340F0C4A291CF7EC00625DE5 /* MainVC */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		340F0C58291D01AA00625DE5 /* CategoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				340F0C54291CFA1500625DE5 /* CategoryViewModel.swift */,
+				340F0C56291CFC5700625DE5 /* CategoryListVC.swift */,
+			);
+			path = CategoryVC;
+			sourceTree = "<group>";
+		};
+		340F0C5D291D068A00625DE5 /* PriceTextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				340F0C59291D01C500625DE5 /* PriceTextFieldViewModel.swift */,
+				340F0C5B291D03B800625DE5 /* PriceTextFieldCell.swift */,
+			);
+			path = PriceTextFieldCell;
+			sourceTree = "<group>";
+		};
+		340F0C62291D070700625DE5 /* DetailWirteFormCell */ = {
+			isa = PBXGroup;
+			children = (
+				340F0C60291D06FD00625DE5 /* DetailWirteFormViewModel.swift */,
+				340F0C5E291D06F000625DE5 /* DetailWirteFormCell.swift */,
+			);
+			path = DetailWirteFormCell;
+			sourceTree = "<group>";
+		};
 		349CF2C7290FCEB800BD6261 = {
 			isa = PBXGroup;
 			children = (
@@ -66,8 +149,8 @@
 			children = (
 				349CF2D3290FCEB800BD6261 /* AppDelegate.swift */,
 				349CF2D5290FCEB800BD6261 /* SceneDelegate.swift */,
-				340F0C46291A647300625DE5 /* MainVC.swift */,
-				340F0C48291A656100625DE5 /* MainViewModel.swift */,
+				340F0C52291CF9D500625DE5 /* Entity */,
+				340F0C53291CF9ED00625DE5 /* Presentation */,
 				349CF2DC290FCEBA00BD6261 /* Assets.xcassets */,
 				349CF2DE290FCEBA00BD6261 /* LaunchScreen.storyboard */,
 				349CF2E1290FCEBA00BD6261 /* Info.plist */,
@@ -156,10 +239,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340F0C5A291D01C500625DE5 /* PriceTextFieldViewModel.swift in Sources */,
 				349CF2D4290FCEB800BD6261 /* AppDelegate.swift in Sources */,
+				340F0C51291CF9CC00625DE5 /* Caregory.swift in Sources */,
+				340F0C4E291CF81A00625DE5 /* TitleTextFieldCellViewModel.swift in Sources */,
 				340F0C47291A647300625DE5 /* MainVC.swift in Sources */,
+				340F0C55291CFA1500625DE5 /* CategoryViewModel.swift in Sources */,
+				340F0C5F291D06F000625DE5 /* DetailWirteFormCell.swift in Sources */,
+				340F0C5C291D03B800625DE5 /* PriceTextFieldCell.swift in Sources */,
 				349CF2D6290FCEB800BD6261 /* SceneDelegate.swift in Sources */,
+				340F0C4C291CF81000625DE5 /* TitleTextFieldCell.swift in Sources */,
 				340F0C49291A656100625DE5 /* MainViewModel.swift in Sources */,
+				340F0C61291D06FD00625DE5 /* DetailWirteFormViewModel.swift in Sources */,
+				340F0C57291CFC5700625DE5 /* CategoryListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
