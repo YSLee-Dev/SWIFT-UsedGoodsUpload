@@ -26,6 +26,7 @@
 		349CF2D6290FCEB800BD6261 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF2D5290FCEB800BD6261 /* SceneDelegate.swift */; };
 		349CF2DD290FCEBA00BD6261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349CF2DC290FCEBA00BD6261 /* Assets.xcassets */; };
 		349CF2E0290FCEBA00BD6261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349CF2DE290FCEBA00BD6261 /* LaunchScreen.storyboard */; };
+		34A3E3A92923938B002E12BD /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A3E3A82923938B002E12BD /* MainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		349CF2DC290FCEBA00BD6261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		349CF2DF290FCEBA00BD6261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		349CF2E1290FCEBA00BD6261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34A3E3A82923938B002E12BD /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				340F0C46291A647300625DE5 /* MainVC.swift */,
 				340F0C48291A656100625DE5 /* MainViewModel.swift */,
+				34A3E3A82923938B002E12BD /* MainModel.swift */,
 				340F0C4F291CF81D00625DE5 /* TitleTextFieldCell */,
 				340F0C58291D01AA00625DE5 /* CategoryVC */,
 				340F0C5D291D068A00625DE5 /* PriceTextFieldCell */,
@@ -249,6 +252,7 @@
 				340F0C5C291D03B800625DE5 /* PriceTextFieldCell.swift in Sources */,
 				349CF2D6290FCEB800BD6261 /* SceneDelegate.swift in Sources */,
 				340F0C4C291CF81000625DE5 /* TitleTextFieldCell.swift in Sources */,
+				34A3E3A92923938B002E12BD /* MainModel.swift in Sources */,
 				340F0C49291A656100625DE5 /* MainViewModel.swift in Sources */,
 				340F0C61291D06FD00625DE5 /* DetailWirteFormViewModel.swift in Sources */,
 				340F0C57291CFC5700625DE5 /* CategoryListVC.swift in Sources */,

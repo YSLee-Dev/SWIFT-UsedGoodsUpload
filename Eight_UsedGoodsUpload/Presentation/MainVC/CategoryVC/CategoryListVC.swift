@@ -60,15 +60,15 @@ extension CategoryListVC{
             .disposed(by: self.bag)
         
         viewModel.pop
-            .emit(to: self.navigationController!.rx.popNavation)
+            .emit(to: self.rx.popNavation)
             .disposed(by: self.bag)
     }
 }
 
-extension Reactive where Base : UINavigationController{
+extension Reactive where Base : CategoryListVC{
     var popNavation : Binder<Void>{
         return Binder(base) { base, _ in
-            base.popViewController(animated: true)
+            base.navigationController?.popViewController(animated: true)
         }
     }
 }

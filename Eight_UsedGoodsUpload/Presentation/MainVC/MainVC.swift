@@ -29,6 +29,7 @@ class MainVC : UIViewController{
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.attribute()
+        self.layout()
     }
     
     required init?(coder: NSCoder) {
@@ -38,7 +39,60 @@ class MainVC : UIViewController{
 
 extension MainVC{
     func bind(viewModel : MainViewModel){
+        viewModel.cellData
+            .drive(self.tableView.rx.items){tv, row, data in
+                switch row{
+                case 0:
+                    guard let cell = tv.dequeueReusableCell(withIdentifier: "TitleTextFieldCell", for: IndexPath(row: row, section: 0)) as? TitleTextFieldCell else {return UITableViewCell()}
+                    cell.selectionStyle = .none
+                    cell.titleInputField.placeholder = data
+                    cell.bind(viewModel: viewModel.titleTextFieldViewModel)
+                    return cell
+                case 1:
+                   let cell = tv.dequeueReusableCell(withIdentifier: "CategoryListCell", for: IndexPath(row: row, section: 0))
+                    cell.selectionStyle = .none
+                    cell.accessoryType = .disclosureIndicator
+                    
+                    var contents = cell.defaultContentConfiguration()
+                    contents.text = data
+                    cell.contentConfiguration = contents
+                    return cell
+                case 2:
+                    guard let cell = tv.dequeueReusableCell(withIdentifier: "PriceTextFieldCell", for: IndexPath(row: row, section: 0)) as? PriceTextFieldCell else {return UITableViewCell()}
+                    cell.selectionStyle = .none
+                    cell.priceInputField.placeholder = data
+                    cell.bind(viewModel: viewModel.priceTextFieldViewModel)
+                    return cell
+                case 3:
+                    guard let cell = tv.dequeueReusableCell(withIdentifier: "DetailWirteFormCell", for: IndexPath(row: row, section: 0)) as? DetailWirteFormCell else {return UITableViewCell()}
+                    cell.selectionStyle = .none
+                    cell.contentInputView.text = data
+                    cell.bind(viewModel: viewModel.detailWirteFormViewModel)
+                    return cell
+                default:
+                    fatalError()
+                }
+            }
+            .disposed(by: self.bag)
         
+        viewModel.presentAlert
+            .bind(to: self.rx.setAlert)
+            .disposed(by: self.bag)
+        
+        viewModel.push
+            .drive(self.rx.categoryVCShow)
+            .disposed(by: self.bag)
+        
+        self.tableView.rx.itemSelected
+            .map{
+                $0.row
+            }
+            .bind(to: viewModel.itemClick)
+            .disposed(by: self.bag)
+        
+        self.submitBtn.rx.tap
+            .bind(to: viewModel.submitBtnClick)
+            .disposed(by: self.bag)
     }
     
     private func attribute(){
@@ -66,6 +120,14 @@ extension Reactive where Base : MainVC{
             let alert = UIAlertController(title: data.title, message: data.msg, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "확인", style: .cancel))
             base.present(alert, animated: true)
+        }
+    }
+    
+    var categoryVCShow : Binder<CategoryViewModel>{
+        return Binder(base){base, data in
+            let vc = CategoryListVC()
+            vc.bind(viewModel: data)
+            base.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
